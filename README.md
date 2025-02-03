@@ -4,11 +4,41 @@
 
 ## :bulb:Project description
 
+I developed a system for an **aircraft** that allow the comprehensive management of **users**, **flights**, **reservations** and **destinations**, with advanced functionalities such as secure **authentication through JWT**, **automatic management** of flights without **available** seats or that have exceeded the **deadline**.
 
+### Aircraft Management:
+- **CRUD** of aircraft only by the **Admin**.
+- Planes have a **name** and the **max number** of **seats**
+
+### Flight Management:
+- **CRUD** of flights only by the **Admin**.
+- The **flight** has: *date, place of departure, arrival place and an assigned plane*.
+- Automatically change the **status** of the **available flight** to *"false"* when the flight **runs out** of **available seats** or is **out of date**.
+  
+### Reservation Management:
+- Create **flight** reservations ONLY if the **selected route exists** and if there are **seats available** and the **date has NOT passed**.
+- You can **ONLY** make **1 reservation** **per flight** if you have booked it, you can ONLY **cancel** it.
+- If there is **NO reservation**, the **option** to **reserve** appears.
+- **ONLY** **Users** can reserve, **Guest** can only **view**.
+- **Availability check** BEFORE **confirming** a reservation.
+
+### User Query:
+- See the **flights book** to a flight or **delete** from a flight.
+- **ONLY** reserve **1 seat per flight**.
+- See all his future reservations as past.
+  
+### Administrator Query:
+- See **who has booked** on a **specific flight**.
 
 ## Requirements:
-
-
+- **User Management:** registration, authentication and role management *(Admin, User and Guest)*.
+- Generation and validation of **JWT tokens** for **secure sessions**.
+- **70%** min coverage
+- ALL functionality must exist in **REST API** and **verified by Postman**.
+- Jira should be used for **epic user stories** and **tasks**.
+- On the flight **list sheet** with the date organized from closest to furthest but only those available on another screen are the **past flights**, including the total seats on the plane and the seats still free.
+- Reserve button to reserve and cancel when it is reserved **(BLADE)**
+- The **administrator** CANNOT make reservations.
 
 ## :eye_speech_bubble: Working app
 
