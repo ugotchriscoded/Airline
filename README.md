@@ -68,12 +68,13 @@ If you can't install XAPP, you can also use another local server that supports M
 
 Creating a database in **Admin** **SQL**.
 
-(insert screenshoot)
+![airline database](https://github.com/user-attachments/assets/a06be3b2-4739-4913-8f8d-b1408a36d51f)
+
 
 ### Step 2: Cloning repository
 
 ```php
-https://github.com/ugotchriscoded/Tolls-and-Vehicles
+https://github.com/ugotchriscoded/Airline
  ```
 
  ### Step 3: Putting everything up to date
@@ -90,8 +91,6 @@ To **run the server** enter this command:
 npm run dev
 ```
 
-(insert screenshoot)
-
 > [!WARNING]
 > **DON'T work** on that terminal again, but you should keep it working. **DON'T KILL IT.**
 
@@ -100,7 +99,9 @@ To see the **running serve** enter the command:
 ```php
 php artisan serve
 ```
-(insert screenshoot)
+
+![airline server](https://github.com/user-attachments/assets/9137db5d-7cf3-4ca3-84bb-00ffee97f6f8)
+
 
 
 > [!NOTE]
