@@ -6,28 +6,28 @@
 
 I developed a system for an **aircraft** that allows the comprehensive management of **users**, **flights**, **reservations** and **destinations** with advanced functionalities such as secure **authentication through JWT**, **automatic management** of flights without **available** seats or that have exceeded the **deadline**.
 
-### Aircraft Management:
+### 💺 Aircraft Management:
 - **CRUD** of aircraft **ONLY** by the **Admin**.
 - Planes have a **name** and the **max number** of **seats**.
 
-### Flight Management:
+### 🔧 Flight Management:
 - **CRUD** of flights **ONLY** by the **Admin**.
 - The **flight** has: *date, place of departure, arrival place and an assigned plane*.
 - Automatically change the **status** of the **available flight** to *"false"* when the flight **runs out** of **available seats** or is **out of date**.
   
-### Reservation Management:
+### 📇 Reservation Management:
 - Create **flight** reservations **ONLY** if the **selected route exists** and there are **seats available** and the **date has NOT passed**.
 - You can **ONLY** make **1 reservation** **per flight**. If you have booked it, you can ONLY **cancel** it.
 - If there is **NO reservation**, the **option** to **reserve** appears.
 - **ONLY** **Users** can reserve, **Guest** can only **view**.
 - **Availability check** BEFORE **confirming** a reservation.
 
-### User Query:
+### 🧑🏻‍💻User Query:
 - See the **flights book** to a flight or **delete** from a flight.
 - **ONLY** reserve **1 seat per flight**.
 - See all his **future reservations** as **past**.
   
-### Administrator Query:
+### 👨‍🔧Administrator Query:
 - See **who has booked** on a **specific flight**.
 
 ## Requirements:
